@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class Passerby_3 : Passerby_2
 {
     [SerializeField] private Renderer rend;
     private Color color;
     private bool canChangeColor;
 
-    protected override void Start()
+    protected override void Start()     // POLYMORPHISM
     {
         color = rend.material.color;
 
         base.Start();
     }
 
-    protected override void Update()
+    protected override void Update()    // POLYMORPHISM
     {
         ChangeColor();
 

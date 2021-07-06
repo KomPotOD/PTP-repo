@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITANCE
 public class Passerby_2 : Passerby_1
 {
     [SerializeField] protected float jumpForce;
@@ -24,14 +25,14 @@ public class Passerby_2 : Passerby_1
         timeToNextJump = Time.time + jumpRate;
     }
 
-    protected override void Update()
+    protected override void Update()    // POLYMORPHISM
     {
         Jump();
 
         base.Update();
     }
 
-    protected override void Move()
+    protected override void Move()      // POLYMORPHISM
     {
         if (!isSpeedChanged)
         {

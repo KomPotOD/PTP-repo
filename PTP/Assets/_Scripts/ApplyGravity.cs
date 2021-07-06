@@ -11,7 +11,7 @@ public class ApplyGravity : MonoBehaviour
     private const float gravity = -9.81f;
     private Vector3 gVector;
     private bool _isGrounded;
-    public bool isGrounded { get { return _isGrounded; } }
+    public bool isGrounded { get { return _isGrounded; } }  // ENCAPSULATION
 
     private CharacterController cc;
 
@@ -20,7 +20,7 @@ public class ApplyGravity : MonoBehaviour
         TryGetComponent(out cc);
     }
 
-    private void Update()
+    private void Update()   // ABSTRACTION
     {
         GroundCheck();
         Gravity();

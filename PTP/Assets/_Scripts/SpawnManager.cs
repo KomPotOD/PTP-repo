@@ -15,7 +15,7 @@ public class SpawnManager : MonoBehaviour
         timeToNextSpawn = Time.time + spawnRate;
     }
 
-    private void Update()
+    private void Update()   // ABSTRACTION
     {
         Spawn();
     }

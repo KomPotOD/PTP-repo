@@ -6,7 +6,7 @@ public class Passerby_1 : MonoBehaviour
 {
     [SerializeField] protected float speed;
 
-    protected virtual void Update()
+    protected virtual void Update() // ABSTRACTION
     {
         Move();
         DestroyOnFallDown();

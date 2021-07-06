@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
         cam = Camera.main.gameObject.GetComponent<Transform>();
     }
 
-    private void Update()
+    private void Update()   // ABSTRACTION
     {
         Look();
         Move();
